@@ -1,0 +1,5 @@
+[General]
+theme=Catppuccin-Mocha-Mauve
+
+[Applications]
+Default=snapper-tools
