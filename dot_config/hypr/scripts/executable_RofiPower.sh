@@ -8,7 +8,7 @@ host=$(hostnamectl hostname)
 
 # Options with Icons and Text
 options=("Lock(l)" "Suspend(u)" "Logout(e)" "Reboot(r)" "Shutdown(s)" "Hibernate(h)")
-icons=("" "" "󰿅" "󱄌" "" "󰒲")
+icons=("" "" "󰿅" "󰜉" "" "󰒲")
 
 # Rofi CMD
 rofi_cmd() {
@@ -47,7 +47,7 @@ run_cmd() {
         "󰿅")
             hyprctl dispatch exit 0
             ;;
-        "󱄌")
+        "󰜉")
             systemctl reboot
             ;;
         "")
