@@ -32,3 +32,4 @@ chezmoi add ~/.config/waybar
 chezmoi add ~/.config/wofi
 chezmoi add ~/.config/kdeglobals
 chezmoi add ~/.config/starship.toml
+chezmoi add ~/Pictures/wallpapers
