@@ -210,3 +210,7 @@ yakuake
 yt-dlp-drop-in
 fzf
 zoxide
+xwaylandvideobridge
+hyprlock
+hypridle
+hyprpicker
