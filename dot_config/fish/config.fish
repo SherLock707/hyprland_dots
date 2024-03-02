@@ -169,6 +169,8 @@ alias rip 'expac --timefmt="%Y-%m-%d %T" "%l\t%n %v" | sort | tail -200 | nl'
 
 zoxide init fish | source
 
+set EDITOR /usr/bin/vscodium
+
 ## Run fastfetch if session is interactive
 if status --is-interactive && type -q fastfetch
     #  fastfetch --load-config neofetch.jsonc
