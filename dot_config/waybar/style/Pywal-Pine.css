@@ -172,6 +172,9 @@ tooltip {
     min-width: 200px;
 }
 
+#cpu {
+    min-width: 40px;
+}
 
 #temperature.critical {
   background-color: @red;
