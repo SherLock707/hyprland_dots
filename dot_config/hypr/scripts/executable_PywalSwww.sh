@@ -31,4 +31,7 @@ done
 # execute pywal skipping tty and terminal
 wal -i $wallpaper_path -s -t
 
+#Update icon colours
+. $HOME/.config/hypr/scripts/SetIconColor.sh
+
 # more info regarding Pywal https://github.com/dylanaraps/pywal/wiki/Getting-Started

@@ -466,8 +466,10 @@
       
   "wlr/taskbar": {
     "format": "{icon}",
-    "icon-size": 20,
+    "icon-size": 16,
     "all-outputs": false,
+    "icon-theme": "Suru_pywall",
+    "sort-by-app-id": true,
     "tooltip-format": "{title}",
     "on-click": "activate",
     "on-click-middle": "close",
@@ -728,7 +730,7 @@
     "smooth-scrolling-threshold": 1,
     "player-icons": {
           "chromium": "",
-          "brave": "",
+          "brave": "<span font=\"Font Awesome 5 Free\"> </span>",
           "default": "",
           "firefox": "",
           "kdeconnect": "",

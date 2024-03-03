@@ -6,21 +6,35 @@
     "logo": {
         "type": "sixel",
         "source": "/home/itachi/joi.png",
-        "width": 50,
-        "height": 15,
+        "width": 40,
+        "height": 12,
         "padding": {
-            "top": 2,
+            "top": 4,
             "left": 2
         }
     },
     "display": {
-        "separator": "  "
+        "separator": "  ",
+        "size": {
+            "ndigits": 0,
+            "maxPrefix": "MB"
+        },
+        "bar": {
+            "charElapsed": "=",
+            "charTotal": "-",
+            "width": 13
+        }
     },
     "modules": [
         {
             "type": "custom", // HardwareStart
             "format": "┌────────────────────── \u001b[1m󰍹 \u001b[0m ────────────────────┐" // `\u001b` is `\033`, or `\e`
         },
+        // {
+        //     "type": "custom2",
+        //     "key": " ",
+        //     "format": "\u001b[31m███\u001b[32m███\u001b[33m███\u001b[34m███\u001b[35m███\u001b[36m███"
+        // },
         {
             "type": "cpu",
             "format": "{1}",
@@ -114,7 +128,8 @@
         },
         {
             "type": "theme",
-            "key": "  󰉼"
+            "key": "  󰉼",
+            "format": "{1}"
         },
         {
             "type": "icons",

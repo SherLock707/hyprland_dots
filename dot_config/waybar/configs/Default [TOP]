@@ -18,7 +18,7 @@
 	"custom/menu",
 	"custom/separator#blank_1",
 	// "cava",
-	// "mpris",
+	"mpris",
 	"custom/mviz"
 	],
 
