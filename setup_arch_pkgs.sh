@@ -9,7 +9,9 @@
 
 # Define categories and their associated packages
 declare -A categories=(
-    [graphics]="package1 package2 package3"
+    [graphics]="package1 
+                package2 
+                package3"
     [system]="glibc-locales ddcutil package6"
     [tools]="bat evtest font-manager"
     [desktop]="waybar-module-pacman-updates package1"
