@@ -7,10 +7,11 @@
         "type": "sixel",
         "source": "/home/itachi/joi.png",
         "width": 40,
-        "height": 12,
+        "height": 15,
         "padding": {
-            "top": 4,
-            "left": 2
+            "top": 3,
+            "left": 2,
+            "right": 2
         }
     },
     "display": {
@@ -23,12 +24,14 @@
             "charElapsed": "=",
             "charTotal": "-",
             "width": 13
-        }
+        },
+        "disableLinewrap": true,
+        "brightColor": true
     },
     "modules": [
         {
-            "type": "custom", // HardwareStart
-            "format": "┌────────────────────── \u001b[1m󰍹 \u001b[0m ────────────────────┐" // `\u001b` is `\033`, or `\e`
+            "type": "title", // HardwareStart
+            "format": "┌─────────── \u001b[1m{1}@{2}\u001b[0m ─────────┐" // `\u001b` is `\033`, or `\e`
         },
         // {
         //     "type": "custom2",
@@ -37,11 +40,13 @@
         // },
         {
             "type": "cpu",
+            "keyColor": "bright_cyan",
             "format": "{1}",
             "key": "  󰍛"
         },
         {
             "type": "gpu",
+            "keyColor": "bright_cyan",
             "key": "  󰾲"
         },
         // {
@@ -50,6 +55,7 @@
         // },
         {
             "type": "memory",
+            "keyColor": "bright_cyan",
             "key": "  󰑭"
         },
         // {
@@ -58,6 +64,7 @@
         // },
         {
             "type": "display",
+            "keyColor": "bright_cyan",
             "key": "  󰍹"
         },
         // {
@@ -86,13 +93,13 @@
         // },
         {
             "type": "custom", // SoftwareStart
-            "format": "├────────────────────── \u001b[1m󱃸 \u001b[0m ────────────────────┤"
+            "format": "├──────────────────── \u001b[1m󰍹 \u001b[0m ──────────────────┤"
         },
-        {
-            "type": "title",
-            "key": "  ",
-            "format": "{1}@{2}"
-        },
+        // {
+        //     "type": "title",
+        //     "key": "  ",
+        //     "format": "{1}@{2}"
+        // },
         {
             "type": "os",
             "key": "  "
@@ -103,36 +110,43 @@
             "format": "{1} {2}"
         },
         {
-            "type": "lm",
-            "key": "  󰧨"
+            "type": "wm",
+            "key": "  "
         },
         {
             "type": "de",
             "key": "  "
         },
         {
-            "type": "wm",
-            "key": "  "
+            "type": "terminal",
+            "key": "  "
         },
         {
             "type": "shell",
             "key": "  "
         },
         {
-            "type": "terminal",
-            "key": "  "
+            "type": "lm",
+            "key": "  󰧨"
+        },
+        {
+            "type": "custom", // SoftwareStart
+            "format": "├──────────────────── \u001b[1m \u001b[0m ──────────────────┤"
         },
         {
             "type": "terminalfont",
+            "keyColor": "bright_magenta",
             "key": "  "
         },
         {
             "type": "theme",
             "key": "  󰉼",
-            "format": "{1}"
+            "keyColor": "bright_magenta",
+            "format": "Catppuccin-Mauve [GTK2/3/4]"
         },
         {
             "type": "icons",
+            "keyColor": "bright_magenta",
             "key": "  󰀻"
         },
         // {
@@ -141,10 +155,12 @@
         // },
         {
             "type": "packages",
+            "keyColor": "bright_magenta",
             "key": "  󰏖"
         },
         {
             "type": "uptime",
+            "keyColor": "bright_magenta",
             "key": "  󰅐"
         },
         // {
@@ -171,12 +187,12 @@
         // },
         {
             "type": "custom", // InformationEnd
-            "format": "└────────────────────────────────────────────┘"
+            "format": "└──────────────────────────────────────────┘"
         },
         {
             "type": "colors",
             "paddingLeft": 2,
-            "symbol": "circle"
+            "symbol": "circle",
         }
     ]
 }

@@ -7,7 +7,7 @@ configuration {
     font:                       "Fira Code SemiBold 14";
     show-icons:                 true;
     /* icon-theme:                 "Suru_pywall"; */
-    display-drun:               "";
+    display-drun:               "󰣇";
 	display-run:                "";
     display-filebrowser:        "";
     display-window:             "󱂬";
