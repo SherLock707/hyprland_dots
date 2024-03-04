@@ -1,0 +1,3 @@
+dot_config/OpenRGB/logs/*.log
+dot_config/rofi/symlink_dot_current_wallpaper
+dot_config/rofi/dot_current_wallpaper_blur.png
