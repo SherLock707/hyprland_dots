@@ -99,7 +99,7 @@ DirSelectDialog Size=1333,774
 
 [General]
 BrowserApplication=Brave-browser.desktop
-ColorScheme=Sweetified
+ColorScheme=Catppuccin-Mocha-Mauve
 ColorSchemeHash=080f3f8eac020ac566c252909d74ead45adfd52c
 TerminalApplication=foot
 fixed=JetBrainsMonoNL Nerd Font,10,-1,5,50,0,0,0,0,0

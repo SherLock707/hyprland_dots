@@ -2,4 +2,5 @@
 theme=Catppuccin-Mocha-Mauve
 
 [Applications]
+Catppuccin-Mocha-Mauve=octopi
 Default=snapper-tools
