@@ -30,6 +30,7 @@ done
 
 # execute pywal skipping tty and terminal
 wal -i $wallpaper_path -s -t
+# matugen --mode dark image $wallpaper_path
 
 #Update icon colours
 . $HOME/.config/hypr/scripts/SetIconColor.sh

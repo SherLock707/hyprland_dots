@@ -19,17 +19,20 @@ def main():
     failed_attempts = 0
 
     while True:
-        if ping_host(host_to_ping):
-            print('Successful ping')
-            failed_attempts = 0
-        else:
-            print('Failed ping')
-            failed_attempts += 1
+        if os.path.exists("/tmp/POWER_OUTAGE_KILLSWITCH"):
+            if ping_host(host_to_ping):
+                print('Successful ping')
+                failed_attempts = 0
+            else:
+                print('Failed ping')
+                failed_attempts += 1
 
-        if failed_attempts >= 2 and ping_host(router_to_ping):
-            os.system("systemctl suspend --force")
-            # os.system("notify-send -u low -i '/home/itachi/.config/dunst/images/bell.png' 'Test' &")
-            break
+            if failed_attempts >= 2 and ping_host(router_to_ping):
+                os.system("systemctl suspend --force")
+                # os.system("notify-send -u low -i '/home/itachi/.config/dunst/images/bell.png' 'Test' &")
+                break
+        else:
+            print("POWER_OUTAGE_KILLSWITCH file not found. Ignoring the operation.")
 
         time.sleep(0.5)
 

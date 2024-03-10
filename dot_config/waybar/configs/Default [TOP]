@@ -43,6 +43,7 @@
 	"custom/backlight",
 	"custom/separator#blank_1",
 	"tray",
+	"custom/weather",
 	"clock",
 	"custom/separator#blank_1",
 	"custom/lock",
