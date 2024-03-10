@@ -4,7 +4,7 @@
 @define-color background @color1; */
 /* @define-color background rgb(40, 42, 54); */
 /* @define-color background-alpha rgba(40, 42, 54, 0.8); */
-@define-color accent @color1;
+@define-color accent @color7;
 @define-color accent2 @color13;
 /* @define-color accent rgba(189, 147, 249, 0.8); */
 /* @define-color current-line rgb(68, 71, 90); */

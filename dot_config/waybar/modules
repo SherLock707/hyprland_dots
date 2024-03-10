@@ -759,6 +759,14 @@
     "on-scroll-down": "~/.config/hypr/scripts/Volume.sh --dec",
   },
 
+  "custom/power_outage_switch":{
+    "format": "󱐋{}",
+    "exec": "[ -e '/tmp/POWER_OUTAGE_KILLSWITCH' ] && echo 'On' || echo 'Off'",
+    // "exec-if": "pgrep -f 'python3 power_check.py' > /dev/null",
+    "interval": 5,
+    "on-click": "[ -e '/tmp/POWER_OUTAGE_KILLSWITCH' ] && rm '/tmp/POWER_OUTAGE_KILLSWITCH' || touch '/tmp/POWER_OUTAGE_KILLSWITCH'",
+  }
+
   }
   
   

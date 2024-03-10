@@ -28,9 +28,9 @@ def main():
                 failed_attempts += 1
 
             if failed_attempts >= 2 and ping_host(router_to_ping):
-                os.system("systemctl suspend --force")
+                os.system("sudo systemctl suspend --force")
                 # os.system("notify-send -u low -i '/home/itachi/.config/dunst/images/bell.png' 'Test' &")
-                break
+                # break
         else:
             print("POWER_OUTAGE_KILLSWITCH file not found. Ignoring the operation.")
 
