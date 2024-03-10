@@ -34,3 +34,4 @@ chezmoi add ~/.config/kdeglobals
 chezmoi add ~/.config/starship.toml
 chezmoi add ~/Pictures/wallpapers
 chezmoi add ~/.config/scripts
+chezmoi add ~/.config/matugen
