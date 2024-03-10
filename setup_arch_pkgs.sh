@@ -199,7 +199,6 @@ upscayl-bin
 vscodium
 waybar
 waybar-module-pacman-updates-git
-waypaper-git
 wev
 wine-staging
 wl-clipboard
@@ -216,3 +215,4 @@ xwaylandvideobridge
 hyprlock
 hypridle
 hyprpicker
+kvantum-qt5

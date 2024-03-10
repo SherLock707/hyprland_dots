@@ -469,8 +469,8 @@
     "icon-size": 16,
     "all-outputs": false,
     "icon-theme": "Suru_pywall",
-    "sort-by-app-id": true,
-    "tooltip-format": "{title}",
+    "sort-by-app-id": false,
+    "tooltip-format": "{title} {app_id}",
     "on-click": "activate",
     "on-click-middle": "close",
     "app_ids-mapping": {

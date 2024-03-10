@@ -2,5 +2,5 @@
 theme=Catppuccin-Mocha-Mauve
 
 [Applications]
-Catppuccin-Mocha-Mauve=octopi
+Catppuccin-Mocha-Mauve=octopi, opensnitch-ui
 Default=snapper-tools

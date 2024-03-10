@@ -172,7 +172,8 @@ tooltip {
     min-width: 200px;
 }
 
-#cpu {
+#cpu,
+#custom-gpu_usage {
     min-width: 40px;
 }
 
