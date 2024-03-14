@@ -4,7 +4,7 @@ dunst_notif="$HOME/.config/dunst/images/bell.png"
 SCRIPTSDIR="$HOME/.config/hypr/scripts"
 
 
-HYPRGAMEMODE=$(hyprctl getoption animations:enabled | awk 'NR==2{print $2}')
+HYPRGAMEMODE=$(hyprctl getoption animations:enabled | awk 'NR==1{print $2}')
 if [ "$HYPRGAMEMODE" = 1 ] ; then
     hyprctl --batch "\
         keyword animations:enabled 0;\
