@@ -27,8 +27,12 @@ def main():
                 print('Failed ping')
                 failed_attempts += 1
 
-            if failed_attempts >= 2 and ping_host(router_to_ping):
-                os.system("sudo systemctl suspend --force")
+            if failed_attempts >= 2:
+                if not ping_host(router_to_ping):
+                    time.sleep(5)
+                    continue
+                failed_attempts = 0
+                os.system("sudo systemctl suspend")
                 # os.system("notify-send -u low -i '/home/itachi/.config/dunst/images/bell.png' 'Test' &")
                 # break
         else:
