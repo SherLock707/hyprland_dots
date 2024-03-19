@@ -35,3 +35,5 @@ chezmoi add ~/.config/starship.toml
 chezmoi add ~/Pictures/wallpapers
 chezmoi add ~/.config/scripts
 chezmoi add ~/.config/matugen
+chezmoi add ~/.config/qt5ct
+chezmoi add ~/.config/qt6ct

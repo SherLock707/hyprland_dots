@@ -216,3 +216,4 @@ hyprlock
 hypridle
 hyprpicker
 kvantum-qt5
+ark
