@@ -122,7 +122,8 @@ menu() {
   printf "$RANDOM_PIC_NAME\x00icon\x1f/${randWall}\n"
 }
 
-swww query || swww init
+# swww query || swww-daemon &
+swww query || swww init &
 
 main() {
   choice=$(menu | ${rofi_command})

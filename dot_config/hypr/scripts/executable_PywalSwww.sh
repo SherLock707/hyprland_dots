@@ -24,7 +24,6 @@ for output in "${monitor_outputs[@]}"; do
     fi
 done
 
-
 # execute pywal
 # wal -i $wallpaper_path
 
@@ -33,6 +32,6 @@ wal -i $wallpaper_path -s -t
 # matugen --mode dark image $wallpaper_path
 
 #Update icon colours
-. $HOME/.config/hypr/scripts/SetIconColor.sh
+$HOME/.config/hypr/scripts/SetIconColor.sh
 
 # more info regarding Pywal https://github.com/dylanaraps/pywal/wiki/Getting-Started

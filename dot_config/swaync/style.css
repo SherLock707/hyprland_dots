@@ -25,7 +25,7 @@
   /* background-color: #1e1e2e; */
   background-color: rgba(30, 30, 46, 0.9);
   color: #cdd6f4;
-  padding: 3;
+  padding: 3px;
   border: 1px solid @accent;
 }
 
