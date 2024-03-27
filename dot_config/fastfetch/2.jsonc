@@ -14,14 +14,14 @@
     //         "right": 2
     //     }
     "logo": {
-        "type": "auto",
-        "source": "/home/itachi/Pictures/hollow_samurai_.png",
+        "type": "raw",
+        "source": "/home/itachi/.config/fastfetch/assets/hollow_samurai.sixel",
         "width": 35,
         "height": 22,
         "padding": {
-            "top": 1,
-            "left": 1,
-            "right": 2
+            "top": 0,
+            "left": 0,
+            "right": 0
         }
     },
     "display": {
