@@ -217,3 +217,4 @@ hypridle
 hyprpicker
 kvantum-qt5
 ark
+chafa
