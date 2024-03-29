@@ -38,3 +38,6 @@ chezmoi add ~/.config/matugen
 chezmoi add ~/.config/qt5ct
 chezmoi add ~/.config/qt6ct
 chezmoi add ~/.config/ags
+chezmoi add ~/.config/gtk-2.0
+chezmoi add ~/.config/gtk-3.0
+chezmoi add ~/.config/gtk-4.0
