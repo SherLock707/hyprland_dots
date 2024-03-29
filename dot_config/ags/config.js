@@ -3,7 +3,7 @@
 import Gdk from 'gi://Gdk';
 import GLib from 'gi://GLib';
 import App from 'resource:///com/github/Aylur/ags/app.js'
-import * as Utils from 'resource:///com/github/Aylur/ags/utils.js'
+// import * as Utils from 'resource:///com/github/Aylur/ags/utils.js'
 // Stuff
 import userOptions from './modules/.configuration/user_options.js';
 // Widgets
@@ -19,7 +19,7 @@ import Overview from './modules/overview/main.js';
 // import SideLeft from './modules/sideleft/main.js';
 // import SideRight from './modules/sideright/main.js';
 
-const COMPILED_STYLE_DIR = `${GLib.get_user_cache_dir()}/ags/user/generated`
+const COMPILED_STYLE_DIR = `${GLib.get_user_config_dir()}/ags/user/`
 const range = (length, start = 1) => Array.from({ length }, (_, i) => i + start);
 function forMonitors(widget) {
     const n = Gdk.Display.get_default()?.get_n_monitors() || 1;
