@@ -178,8 +178,17 @@ zoxide init fish | source
 
 set EDITOR /usr/bin/vscodium
 
-## Run fastfetch if session is interactive
-if status --is-interactive && type -q fastfetch
-    #  fastfetch --load-config neofetch.jsonc
-    fastfetch --load-config ~/.config/fastfetch/2.jsonc
+# ## Run fastfetch if session is interactive
+# if status --is-interactive && type -q fastfetch
+#     #  fastfetch --load-config neofetch.jsonc
+#     fastfetch --load-config ~/.config/fastfetch/2.jsonc
+# end
+
+if [ $TERM = foot ]
+  fastfetch --load-config ~/.config/fastfetch/foot.jsonc
+else if [ $TERM = xterm-kitty ]
+  fastfetch --load-config ~/.config/fastfetch/kitty.jsonc
+# else
+#   fastfetch --load-config ~/.config/fastfetch/2.jsonc
+
 end
