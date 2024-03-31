@@ -3,7 +3,7 @@
 }
 
 @import '../../../.cache/wal/colors-waybar.css';
-@import '../../../.cache/wal/colors-waybar-rgba.css';
+/* @import '../../../.cache/wal/colors-waybar-rgba.css'; */
 
 
 widget {
@@ -30,7 +30,8 @@ widget {
   padding: 0rem 1.364rem;
   padding-right: 2.864rem;
   background-color: #17111B;
-  color: #EBDFED;
+  /* color: #EBDFED; */
+  color: alpha(@color7, 0.9);
   caret-color: transparent;
 }
 .overview-search-box selection {
@@ -44,7 +45,8 @@ widget {
 }
 
 .overview-search-prompt {
-  color: #988D9D;
+  /* color: #988D9D; */
+  color: alpha(@color7, 0.9);
 }
 
 .overview-search-icon {
@@ -121,7 +123,8 @@ widget {
   box-shadow: 0px 2px 3px @color5;
   margin: 0.476rem;
   padding: 0.341rem;
-  background-color: rgba(49, 50, 68, 0.8);
+  /* background-color: rgba(49, 50, 68, 0.8); */
+  background-color: alpha(@color9, 0.4);
   color: #EBDFED;
 }
 
@@ -130,10 +133,11 @@ widget {
   -gtk-outline-radius: 1.159rem;
   margin: 0.341rem;
   background-color: #26233A;
+  border: 0.068rem solid alpha(@color4, 0.5);
 }
 
 .overview-tasks-workspace-number {
-  font-family: "Rubik", "Geist", "AR One Sans", "Reddit Sans", "Inter", "Roboto", "Ubuntu", "Noto Sans", sans-serif;
+  font-family: "Open Sans", "Noto Sans", sans-serif;
   color: #CFC2D3;
 }
 
@@ -141,7 +145,8 @@ widget {
   border-radius: 1.159rem;
   -gtk-outline-radius: 1.159rem;
   transition: 300ms cubic-bezier(0.1, 1, 0, 1);
-  background-color: @color_a3;
+  background-color: alpha(@color3, .7);
+  /* background-color: @color_a3; */
   /* background-color: rgba(46, 40, 50, 0.8); */
   color: #EBDFED;
   border: 0.068rem solid @color7;

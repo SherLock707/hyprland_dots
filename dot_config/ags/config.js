@@ -20,11 +20,11 @@ import Overview from './modules/overview/main.js';
 // import SideRight from './modules/sideright/main.js';
 
 const COMPILED_STYLE_DIR = `${GLib.get_user_config_dir()}/ags/user/`
-const range = (length, start = 1) => Array.from({ length }, (_, i) => i + start);
-function forMonitors(widget) {
-    const n = Gdk.Display.get_default()?.get_n_monitors() || 1;
-    return range(n, 0).map(widget).flat(1);
-}
+// const range = (length, start = 1) => Array.from({ length }, (_, i) => i + start);
+// function forMonitors(widget) {
+//     const n = Gdk.Display.get_default()?.get_n_monitors() || 1;
+//     return range(n, 0).map(widget).flat(1);
+// }
 
 // SCSS compilation
 // Utils.exec(`bash -c 'echo "" > ${App.configDir}/scss/_musicwal.scss'`); // reset music styles

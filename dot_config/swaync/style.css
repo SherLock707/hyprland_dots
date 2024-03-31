@@ -10,6 +10,18 @@
 /* @define-color current-line rgb(68, 71, 90); */
 /* @define-color comment rgb(98, 114, 164); */
 
+@define-color cc-bg rgba(26, 27, 38, 1);
+@define-color noti-border-color rgba(255, 255, 255, 0.15);
+@define-color noti-bg rgb(17, 17, 27);
+@define-color noti-bg-darker rgb(43, 43, 57);
+@define-color noti-bg-hover rgb(27, 27, 43);
+@define-color noti-bg-focus rgba(27, 27, 27, 0.6);
+@define-color noti-close-bg rgba(255, 255, 255, 0.1);
+@define-color noti-close-bg-hover rgba(255, 255, 255, 0.15);
+@define-color text-color rgba(169, 177, 214, 1);
+@define-color text-color-disabled rgb(150, 150, 150);
+@define-color bg-selected rgb(0, 128, 255);
+
 * {
   all: unset;
   font-size: 18px;
@@ -253,8 +265,10 @@ progressbar {
   background: linear-gradient(
     45deg,
     /* rgba(164, 89, 235, 0.8), */
-    rgba(25, 227, 250, 0.8),
-    rgba(250, 154, 250, 0.8)
+    /* rgba(25, 227, 250, 0.8),
+    rgba(250, 154, 250, 0.8) */
+    alpha(@color8, 0.8),
+    alpha(@color7, 0.8)
     
     /* @accent2,
     @accent */
@@ -310,15 +324,33 @@ trough {
   border: 1px solid #6c7086;
 }
 
+
+
 .widget-mpris {
+  color: @color7;
+  background: @noti-bg-darker;
+  padding: 5px 10px;
+  margin: 5px 10px 5px 10px;
   border: 1px solid @accent;
   border-radius: 8px;
-  margin: 7px;
-  padding: 2px;
+  /* margin: 7px; */
+  /* padding: 2px; */
 }
 
 .widget-mpris > box > button {
   border-radius: 5px;
 }
 
+.widget-mpris-player {
+  padding: 5px 10px;
+  margin: 10px;
+}
 
+.widget-mpris-title {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.widget-mpris-subtitle {
+  font-size: 1.1rem;
+}

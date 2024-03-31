@@ -6,7 +6,7 @@
     "logo": {
         "type": "kitty",
         "source": "/home/itachi/.config/fastfetch/assets/hollow_samurai_.png",
-        "width": 32,
+        "width": 31,
         "height": 17,
         "padding": {
             "top": 2,

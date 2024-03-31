@@ -31,7 +31,7 @@ done
 wal -i $wallpaper_path -s -t
 # matugen --mode dark image $wallpaper_path
 
-sed -i 's/1.0)/0.5)/g' ~/.cache/wal/colors-waybar-rgba.css
+# sed -i 's/1.0)/0.5)/g' ~/.cache/wal/colors-waybar-rgba.css
 
 #Update icon colours
 $HOME/.config/hypr/scripts/SetIconColor.sh
