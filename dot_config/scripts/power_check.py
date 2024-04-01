@@ -26,6 +26,9 @@ def main():
             else:
                 print('Failed ping')
                 failed_attempts += 1
+            
+            if failed_attempts >= 2:
+                os.system(f"notify-send -u low -i '/home/itachi/.config/dunst/images/bell.png' 'Suspending in {failed_attempts-1}' 'Power outage' &")
 
             if failed_attempts >= 5:
                 if not ping_host(router_to_ping):
