@@ -48,7 +48,7 @@ mainbox {
     enabled:                    true;
     orientation:                horizontal;
 	padding:					8px;
-    background-image:           url("~/.config/rofi/.current_wallpaper", height);
+    background-image:           url("~/.config/rofi/.current_wallpaper_blur.png", height);
     children:                   [ "imagebox"];
     border-radius:              12px;
     background-color:      		@background;
