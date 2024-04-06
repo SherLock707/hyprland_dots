@@ -1,6 +1,6 @@
 dot_config/OpenRGB/logs/*.log
-dot_config/rofi/symlink_dot_current_wallpaper
-dot_config/rofi/dot_current_wallpaper_blur.png
+dot_config/rofi/.current_wallpaper
+dot_config/rofi/.current_wallpaper_blur.png
 .vscode/settings.json
 dot_config/qt5ct/colors/.keep
 dot_config/qt6ct/colors/.keep
