@@ -27,7 +27,7 @@ const acotd = x => acot(x) * 180 / pi;
 
 const MAX_RESULTS = 10;
 const OVERVIEW_SCALE = 0.18; // = overview workspace box / screen size
-const OVERVIEW_WS_NUM_SCALE = 0.09;
+const OVERVIEW_WS_NUM_SCALE = 0.0;
 const OVERVIEW_WS_NUM_MARGIN_SCALE = 0.07;
 const TARGET = [Gtk.TargetEntry.new('text/plain', Gtk.TargetFlags.SAME_APP, 0)];
 
