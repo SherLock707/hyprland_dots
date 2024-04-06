@@ -36,4 +36,7 @@ wal -i $wallpaper_path -s -t
 #Update icon colours
 $HOME/.config/hypr/scripts/SetIconColor.sh
 
+# Update QT accent
+$HOME/.config/hypr/scripts/Update_qt_accent.sh
+
 # more info regarding Pywal https://github.com/dylanaraps/pywal/wiki/Getting-Started

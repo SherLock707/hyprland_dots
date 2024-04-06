@@ -133,6 +133,8 @@ widget {
   -gtk-outline-radius: 1.159rem;
   margin: 0.341rem;
   background-color: #26233A;
+  /* background-image: url('/home/itach/.config/rofi/.current_wallpaper_blur.png');
+  background-size: cover; */
   border: 0.068rem solid alpha(@color4, 0.5);
 }
 
