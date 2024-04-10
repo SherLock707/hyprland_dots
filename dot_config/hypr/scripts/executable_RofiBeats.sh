@@ -14,6 +14,7 @@ declare -A menu_options=(
   ["SmoothChill 🏖️🎶"]="https://media-ssl.musicradio.com/SmoothChill"
   ["Relaxing Music ☕️🎶"]="https://youtube.com/playlist?list=PLMIbmfP_9vb8BCxRoraJpoo4q1yMFg4CE"
   ["Doja Cat - Agora Hills 💃🎶"]="https://www.youtube.com/playlist?list=PLl2G65bbMeeXLM5xu9lavnk1jbsAIhnr6"
+  ["Cannons - Golden cover 💃🎶"]="https://www.youtube.com/watch?v=ZznBYOeDmug"
 )
 
 # Function for displaying notifications

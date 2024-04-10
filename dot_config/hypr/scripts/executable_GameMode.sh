@@ -18,7 +18,8 @@ if [ "$HYPRGAMEMODE" = 1 ] ; then
     dunstify -u low -i "$dunst_notif" "gamemode enabled. All animations off"
     exit
 else
-	swww init && swww img "$HOME/.config/rofi/.current_wallpaper"
+	# swww init && swww img "$HOME/.config/rofi/.current_wallpaper"
+	swww-daemon && swww img "$HOME/.config/rofi/.current_wallpaper"
 	sleep 0.1
 	${SCRIPTSDIR}/PywalSwww.sh
 	sleep 0.5
