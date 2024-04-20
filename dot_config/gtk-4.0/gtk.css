@@ -35,7 +35,7 @@
 
 dnd {
   color: #FFFFFF;
-}
+}`
 
 .normal-icons {
   -gtk-icon-size: 16px;
@@ -336,7 +336,7 @@ entry headerbar popover.background entry > text > block-cursor,
 headerbar popover.background entry entry > text > block-cursor,
 entry > text > block-cursor {
   color: rgba(255, 255, 255, 0.04);
-  background-color: #FFFFFF;
+  background-color: #d30e0e;
 }
 
 

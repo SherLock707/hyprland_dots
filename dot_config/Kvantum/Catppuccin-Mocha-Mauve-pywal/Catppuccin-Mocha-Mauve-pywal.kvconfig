@@ -1,6 +1,6 @@
 [%General]
 author=elkrien based on Arc Dark style
-comment=Catppuccin-Mocha-Mauve
+comment=Catppuccin-Mocha-Mauve-pywal
 spread_menuitems=true
 left_tabs=true
 mirror_doc_tabs=true
@@ -165,6 +165,7 @@ frame.bottom=1
 frame.left=1
 frame.right=1
 frame.patternsize=20
+
 
 [GenericFrame]
 inherits=PanelButtonCommand
