@@ -18,7 +18,8 @@
 	"custom/menu",
 	"custom/separator#blank_1",
 	// "cava",
-	"mpris"
+	// "mpris",
+	"hyprland/window"
 	// "custom/mviz"
 	],
 

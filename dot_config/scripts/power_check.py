@@ -36,7 +36,7 @@ def main():
                     continue
                 failed_attempts = 0
                 os.system("notify-send -u low -i '/home/itachi/.config/dunst/images/bell.png' 'Suspending' 'Power outage' &")
-                os.system("sudo systemctl suspend")
+                os.system("sudo systemctl suspend & disown")
                 # os.system("notify-send -u low -i '/home/itachi/.config/dunst/images/bell.png' 'Test' &")
                 # break
         # else:
