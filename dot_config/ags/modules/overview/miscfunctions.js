@@ -2,7 +2,7 @@ const { Gio, GLib } = imports.gi;
 import App from 'resource:///com/github/Aylur/ags/app.js';
 import * as Utils from 'resource:///com/github/Aylur/ags/utils.js';
 const { execAsync, exec } = Utils;
-import Todo from "../../services/todo.js";
+// import Todo from "../../services/todo.js";
 import { darkMode } from '../.miscutils/system.js';
 
 export function hasUnterminatedBackslash(inputString) {
