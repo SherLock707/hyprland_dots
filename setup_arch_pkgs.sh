@@ -219,3 +219,5 @@ kvantum-qt5
 ark
 chafa
 dart-sass
+ archlinux-xdg-menu
+goverlay
