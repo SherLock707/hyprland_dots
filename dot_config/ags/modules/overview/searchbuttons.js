@@ -64,7 +64,7 @@ export const DirectoryButton = ({ parentPath, name, type, icon }) => {
 }
 
 export const CalculationResultButton = ({ result, text }) => searchItem({
-    materialIconName: 'calculate',
+    materialIconName: '󱖦',
     name: `Math result`,
     actionName: "Copy",
     content: `${result}`,
