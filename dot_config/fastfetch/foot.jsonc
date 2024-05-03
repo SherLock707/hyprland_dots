@@ -57,7 +57,8 @@
         {
             "type": "gpu",
             "keyColor": "bright_cyan",
-            "key": "  󰾲"
+            "key": "  󰾲",
+            "format": "{2}"
         },
         // {
         //     "type": "disk",
@@ -112,7 +113,8 @@
         // },
         {
             "type": "os",
-            "key": "  "
+            "key": "  ",
+            "format": "{2}"
         },
         {
             "type": "kernel",
