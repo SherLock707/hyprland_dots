@@ -64,7 +64,7 @@ export const DirectoryButton = ({ parentPath, name, type, icon }) => {
 }
 
 export const CalculationResultButton = ({ result, text }) => searchItem({
-    materialIconName: '󱖦',
+    materialIconName: '󱖦 ',
     name: `Math result`,
     actionName: "Copy",
     content: `${result}`,
@@ -132,7 +132,7 @@ export const DesktopEntryButton = (app) => {
 }
 
 export const ExecuteCommandButton = ({ command, terminal = false }) => searchItem({
-    materialIconName: `${terminal ? 'terminal' : ''}`,
+    materialIconName: `${terminal ? 'terminal' : ' '}`,
     name: `Run command`,
     actionName: `Execute ${terminal ? 'in terminal' : ''}`,
     content: `${command}`,
@@ -141,7 +141,7 @@ export const ExecuteCommandButton = ({ command, terminal = false }) => searchIte
 })
 
 export const CustomCommandButton = ({ text = '' }) => searchItem({
-    materialIconName: '',
+    materialIconName: ' ',
     name: 'Action',
     actionName: 'Run',
     content: `${text}`,
@@ -152,7 +152,7 @@ export const CustomCommandButton = ({ text = '' }) => searchItem({
 });
 
 export const SearchButton = ({ text = '' }) => searchItem({
-    materialIconName: '󰥗',
+    materialIconName: '󰜏 ',
     name: 'Search the web',
     actionName: 'Go',
     content: `${text}`,

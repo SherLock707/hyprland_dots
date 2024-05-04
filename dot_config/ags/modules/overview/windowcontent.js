@@ -87,7 +87,7 @@ export const SearchAndWindows = () => {
         hpack: 'end',
         child: Widget.Label({
             className: 'txt txt-large icon-material overview-search-icon',
-            label: 'search',
+            label: ' ',
         }),
     });
 
