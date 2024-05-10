@@ -47,7 +47,7 @@ let configOptions = {
     },
     'search': {
         'engineBaseUrl': "https://www.google.com/search?q=",
-        'excludedSites': [],
+        'excludedSites': [], //add site to exclude from result. eg: "quora.com"
     },
     'time': {
         // See https://docs.gtk.org/glib/method.DateTime.format.html

@@ -479,7 +479,8 @@
     "ignore-list": [
           "wofi",
           "rofi",
-          "foot"  
+          "foot",
+          "foot-dropterm"
                    ]
   },
       
@@ -558,7 +559,7 @@
     "format-alt-click": "click",
     "interval": 3600,
     "return-type": "json",
-    // "exec": "~/.config/hypr/scripts/Weather.sh",
+    // "exec": "python3 ~/.config/hypr/scripts/weather2.py",
     "exec": "~/.config/hypr/scripts/Weather.py",
     "exec-if": "ping wttr.in -c1",
     "tooltip" : true,

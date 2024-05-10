@@ -43,3 +43,4 @@ chezmoi add ~/.config/gtk-3.0
 chezmoi add ~/.config/gtk-4.0
 chezmoi add ~/.config/zathura
 chezmoi add ~/.config/menus
+chezmoi add ~/.config/wallust

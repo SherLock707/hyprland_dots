@@ -1,6 +1,6 @@
 #!/bin/bash
 
-city=Ponda
+city=
 cachedir=~/.cache/rbn
 cachefile=${0##*/}-$1
 
@@ -78,3 +78,7 @@ esac
 #echo $temp $condition
 
 echo -e "{\"text\":\""$temperature $condition"\", \"alt\":\""${weather[0]}"\", \"tooltip\":\""${weather[0]}: $temperature ${weather[1]}"\"}"
+
+cached_weather=" $temperature  \n$condition ${weather[1]}"
+
+echo -e $cached_weather >  ~/.cache/.weather_cache

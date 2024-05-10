@@ -5,6 +5,7 @@
 city = "Ponda"
 import json
 import requests
+import os
 from datetime import datetime
 
 WEATHER_CODES = {
@@ -64,6 +65,11 @@ data = {}
 weather = requests.get(f"https://wttr.in/{city}?format=j1").json()
 
 
+# simple_weather = requests.get(f"https://wttr.in/{city}?format=2").text
+# with open(os.path.expanduser("~/.cache/weather"), "w") as file:
+#     file.write(simple_weather.replace("   🌡️", "🌡️"))
+
+
 def format_time(time):
     return time.replace("00", "").zfill(2)
 
@@ -103,6 +109,16 @@ data['tooltip'] = f"<b>{weather['current_condition'][0]['weatherDesc'][0]['value
 data['tooltip'] += f"Feels like: {weather['current_condition'][0]['FeelsLikeC']}°\n"
 data['tooltip'] += f"Wind: {weather['current_condition'][0]['windspeedKmph']}Km/h\n"
 data['tooltip'] += f"Humidity: {weather['current_condition'][0]['humidity']}%\n"
+
+simple_weather = f"🌡️  {weather['current_condition'][0]['weatherDesc'][0]['value']} {weather['current_condition'][0]['temp_C']}°\n" + \
+                f"🫠  {weather['current_condition'][0]['FeelsLikeC']}°\n" + \
+                f"💨  {weather['current_condition'][0]['windspeedKmph']}Km/h\n" + \
+                f"♨️  {weather['current_condition'][0]['humidity']}%"
+
+# print(simple_weather)
+with open(os.path.expanduser("~/.cache/.weather_cache"), "w") as file:
+    file.write(simple_weather)
+
 for i, day in enumerate(weather['weather']):
     data['tooltip'] += f"\n<b>"
     if i == 0:
