@@ -110,10 +110,10 @@ data['tooltip'] += f"Feels like: {weather['current_condition'][0]['FeelsLikeC']}
 data['tooltip'] += f"Wind: {weather['current_condition'][0]['windspeedKmph']}Km/h\n"
 data['tooltip'] += f"Humidity: {weather['current_condition'][0]['humidity']}%\n"
 
-simple_weather = f"🌡️  {weather['current_condition'][0]['weatherDesc'][0]['value']} {weather['current_condition'][0]['temp_C']}°\n" + \
-                f"🫠  {weather['current_condition'][0]['FeelsLikeC']}°\n" + \
-                f"💨  {weather['current_condition'][0]['windspeedKmph']}Km/h\n" + \
-                f"♨️  {weather['current_condition'][0]['humidity']}%"
+simple_weather = f"  {weather['current_condition'][0]['weatherDesc'][0]['value']} {weather['current_condition'][0]['temp_C']}°\n" + \
+                f"  {weather['current_condition'][0]['FeelsLikeC']}°\n" + \
+                f"  {weather['current_condition'][0]['windspeedKmph']}Km/h\n" + \
+                f"  {weather['current_condition'][0]['humidity']}%"
 
 # print(simple_weather)
 with open(os.path.expanduser("~/.cache/.weather_cache"), "w") as file:

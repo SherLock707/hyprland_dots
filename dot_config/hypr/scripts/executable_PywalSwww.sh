@@ -18,7 +18,7 @@ for output in "${monitor_outputs[@]}"; do
 
         # Copy the wallpaper to the location Rofi can access
         ln -sf "$wallpaper_path" "$HOME/.config/rofi/.current_wallpaper"
-        convert "$wallpaper_path" -filter Gaussian -blur 0x8 $HOME/.config/rofi/.current_wallpaper_blur.png &
+        convert "$wallpaper_path" -resize 40% -filter Gaussian -blur 0x8 $HOME/.config/rofi/.current_wallpaper_blur.png &
 
         break  # Exit the loop after processing the first found monitor output
     fi
