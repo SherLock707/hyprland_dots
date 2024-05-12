@@ -24,19 +24,13 @@ for output in "${monitor_outputs[@]}"; do
     fi
 done
 
-# execute pywal
-# wal -i $wallpaper_path
 
 # execute pywal skipping tty and terminal
 wal -i $wallpaper_path -s -t
 # matugen --mode dark image $wallpaper_path
-
-# sed -i 's/1.0)/0.5)/g' ~/.cache/wal/colors-waybar-rgba.css
 
 #Update icon colours
 $HOME/.config/hypr/scripts/SetIconColor.sh
 
 # Update QT accent
 $HOME/.config/hypr/scripts/Update_qt_accent.sh
-
-# more info regarding Pywal https://github.com/dylanaraps/pywal/wiki/Getting-Started

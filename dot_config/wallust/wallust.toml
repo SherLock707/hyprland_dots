@@ -44,8 +44,6 @@ threshold = 10
 # waybar.template = 'templates/colors-waybar.css'
 # waybar.target = '~/.config/waybar/wallust/colors-waybar.css'
 
-
-
 #macchina.template = 'templates/colors-macchina.toml'
 #macchina.target = '~/.config/macchina/themes/wallust.toml'
 

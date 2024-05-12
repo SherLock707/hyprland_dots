@@ -13,8 +13,6 @@ done
 ags -q
 
 # relaunch apps
-# dunst &
-# swaync-client -R -rs &
 swaync &
 waybar &
 ags &

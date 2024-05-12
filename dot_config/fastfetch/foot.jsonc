@@ -203,7 +203,8 @@
         },
         {
             "type": "colors",
-            "paddingLeft": 2,
+            "paddingLeft": 1,
+            "key": "  󰮯",
             "symbol": "circle",
         }
     ]
