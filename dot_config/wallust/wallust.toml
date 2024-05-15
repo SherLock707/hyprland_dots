@@ -1,6 +1,6 @@
 # wallust 3.0 beta.*
 
-backend = "resized"
+backend = "kmeans"
 # backend = "full"
 color_space = "lch"
 
@@ -26,7 +26,7 @@ palette = "dark16"
 #  2 - 10     Perceptible at a glance.
 #  11 - 49    Colors are more similar than opposite
 #  100        Colors are exact opposite
-threshold = 10
+threshold = 20
 
 [templates]
 # cava.template = 'templates/colors-cava'

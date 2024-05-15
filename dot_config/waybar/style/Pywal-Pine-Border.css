@@ -171,7 +171,7 @@ tooltip {
 #custom-weather.snowyIcyNight,
 #custom-weather.sunnyDay {
     color: @main-fg;
-    background: @main-bg;
+    background: alpha(@main-bg, 0.7);
     opacity: 1;
 	padding-top: 2px;
 	padding-bottom: 2px;

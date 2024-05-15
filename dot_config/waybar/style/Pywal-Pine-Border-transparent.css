@@ -4,7 +4,7 @@
 @import '../../.cache/wal/colors-waybar.css';
 
 @define-color bar-bg rgba(0, 0, 0, 0);
-@define-color main-bg alpha(@color1, 0.2);
+@define-color main-bg alpha(@color1, 0.4);
 /* @define-color main-fg #ebbcba; */
 @define-color main-fg @color7; /* 6 7 13 3 11*/
 @define-color wb-act-bg #31748f;

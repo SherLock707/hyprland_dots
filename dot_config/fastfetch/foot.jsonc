@@ -124,6 +124,7 @@
         {
             "type": "wm",
             "key": "  "
+            // "format": {1}""
         },
         {
             "type": "de",
@@ -131,16 +132,41 @@
         },
         {
             "type": "terminal",
-            "key": "  "
+            "key": "  "
         },
         {
             "type": "shell",
-            "key": "  "
+            "key": "  "
         },
         {
             "type": "lm",
             "key": "  󰧨"
         },
+        {
+            "type": "command",
+            "key": "  ",
+            "text": "pacman -Q waybar"
+        },
+        {
+            "type": "command",
+            "key": "  󰸉",
+            "text": "pacman -Q swww"
+        },
+        {
+            "type": "command",
+            "key": "  󰷛",
+            "text": "pacman -Q hyprlock"
+        },
+        {
+            "type": "command",
+            "key": "  ",
+            "text": "pacman -Q mpv"
+        },
+        // {
+        //     "type": "command",
+        //     "key": "  󰺷",
+        //     "text": "lutris -l | wc -l"
+        // },
         {
             "type": "custom", // SoftwareStart
             "format": "├──────────────────── \u001b[1m \u001b[0m ──────────────────┤"
@@ -150,11 +176,17 @@
             "keyColor": "bright_magenta",
             "key": "  "
         },
+        // {
+        //     "type": "theme",
+        //     "key": "  󰉼",
+        //     "keyColor": "bright_magenta",
+        //     // "format": "Catppuccin-Mauve [GTK2/3/4]"
+        // },
         {
-            "type": "theme",
-            "key": "  󰉼",
+            "type": "command",
             "keyColor": "bright_magenta",
-            "format": "Catppuccin-Mauve [GTK2/3/4]"
+            "key": "  󰉼",
+            "text": "cat ~/.config/Kvantum/kvantum.kvconfig | grep theme | cut -d '=' -f 2"
         },
         {
             "type": "icons",
@@ -174,6 +206,12 @@
             "type": "uptime",
             "keyColor": "bright_magenta",
             "key": "  󰅐"
+        },
+        {
+            "type": "command",
+            "keyColor": "bright_magenta",
+            "key": "  󰃲",
+            "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
         },
         // {
         //     "type": "media",
