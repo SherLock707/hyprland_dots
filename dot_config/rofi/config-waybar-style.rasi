@@ -24,7 +24,7 @@ configuration {
 
 /* ---- Window ---- */
 window {
-    width:                      35%;
+    width:                      29%;
     height:						30%;
     x-offset:                   0px;
     y-offset:                   0px;
@@ -108,7 +108,7 @@ entry {
 /* ---- Listview ---- */
 listview {
     enabled:                    true;
-    columns:                    3;
+    columns:                    2;
     lines:                      7;
   	spacing:                    4px;
   	dynamic:                    true;

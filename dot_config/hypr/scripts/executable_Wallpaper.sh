@@ -5,7 +5,7 @@ PICS=($(find ${DIR} -type f \( -name "*.jpg" -o -name "*.jpeg" -o -name "*.png" 
 RANDOMPICS=${PICS[ $RANDOM % ${#PICS[@]} ]}
 
 # swww query || swww init
-swww query || swww-daemon
+swww query || swww-daemon --format xrgb
 swww img ${RANDOMPICS} --transition-fps 30 --transition-type any --transition-duration 3
 
 # exec $HOME/.config/hypr/scripts/PywalSwww.sh &

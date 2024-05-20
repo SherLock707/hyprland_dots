@@ -41,7 +41,6 @@ window {
     fullscreen:             false;
     enabled:                true;
     border-radius:          12px;
-    border-radius:          12px;
     transparency:           "real";
 	background-image:   	url("~/.config/rofi/.current_wallpaper_blur.png", height);
     
@@ -53,7 +52,7 @@ mainbox {
     enabled:                true;
     orientation:            horizontal;
 	padding:				8px;
-    children:               [ "imagebox"];
+    children:               ["imagebox"];
     border-radius:          12px;
     background-color:       transparent;
 }

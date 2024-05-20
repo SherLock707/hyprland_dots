@@ -159,6 +159,11 @@
         },
         {
             "type": "command",
+            "key": "  󰮫",
+            "text": "echo \"rofi $(pacman -Q rofi | cut -d ' ' -f2 | cut -d '+' -f1) (Wayland)\""
+        },
+        {
+            "type": "command",
             "key": "  ",
             "text": "pacman -Q mpv"
         },

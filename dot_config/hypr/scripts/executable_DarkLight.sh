@@ -20,7 +20,7 @@ pkill swaybg
 
 # Initialize swww if needed
 # swww query || swww init
-swww query || swww-daemon
+swww query || swww-daemon --format xrgb
 
 # Set swww options
 swww="swww img"

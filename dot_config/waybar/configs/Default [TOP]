@@ -13,9 +13,12 @@
 "margin-top": 6,
 "margin-left": 8,
 "margin-right": 8,
+"reload_style_on_change": true,
 
 "modules-left": [
 	"custom/menu",
+	"custom/separator#blank_1",
+	"privacy",
 	"custom/separator#blank_1",
 	// "cava",
 	// "mpris",
